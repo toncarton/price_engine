@@ -1,4 +1,7 @@
 
+  const PRICE_ZONE_1 = 30;
+  const PRICE_ZONE_2 = 50;
+
   if (!TCT_ADDRESSES.every(a => a.postalCode)) {
     return {
       transportation: 0,
@@ -37,9 +40,9 @@
   const addressesInZone2 = postalCodes.every(cp => zone2.includes(cp));
 
   if (addressesInZone1) {
-    price = 30;
+    price = PRICE_ZONE_1;
   } else {
-    price = 50;
+    price = PRICE_ZONE_2;
   }
 
   return {

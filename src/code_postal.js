@@ -1,4 +1,8 @@
 function grille(TCT_ADDRESSES, TCT_TRANSPORTATION_DURATION) {
+  const PRICE_ZONE_1 = 30;
+  const PRICE_ZONE_2 = 50;
+
+
   if(! TCT_ADDRESSES.every(a => a.postalCode)) {
     return { transportation: 0, handling: 0,
              error: "Merci de renseigner des adresses complètes comme 12 rue .."
@@ -43,9 +47,9 @@ function grille(TCT_ADDRESSES, TCT_TRANSPORTATION_DURATION) {
   const addressesInZone2 = postalCodes.every(cp => zone2.includes(cp));
 
   if(addressesInZone1) {
-    price = 30;
+    price = PRICE_ZONE_1;
   } else {
-    price = 50;
+    price = PRICE_ZONE_2;
   }
 
   return {transportation: price * 1.2, handling: 0, persons: 1};
