@@ -1,0 +1,19 @@
+{
+  "name": "toncarton-price-engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "format": "babel ./src/*.js -d temp",
+    "build": "bash ./bin/build.sh"
+  },
+  "author": "chadda chakib",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "mocha": "^7.1.1"
+  }
+}
