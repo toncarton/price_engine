@@ -76,6 +76,8 @@ The resulting files are starting with `tct_`
 ## Integration with your toncarton account
 The last step is to copy the content of the file present in the `dist/` folder
 
+![Image of toncarton price engine panel](/doc/images/tct_copy_engine.png)
+
 
 ## How the pice engine work
 The function will be called with the arguments computed from the inputs of the customers
