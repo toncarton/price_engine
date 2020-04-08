@@ -17,7 +17,7 @@ describe('grille tarifaire par etape', function() {
     assert.equal(grille(addresses).transportation, 20 * 1.2);
   });
 
-  it('prix pour un deux point de livraison', function() {
+  it('prix pour deux points de livraison', function() {
 
     const addresses = [{codePostal: '75001'},
                        {codePostal: '75002'},
