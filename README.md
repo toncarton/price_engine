@@ -79,7 +79,7 @@ The last step is to copy the content of the file present in the `dist/` folder
 ![Image of toncarton price engine panel](/doc/images/tct_copy_engine.png)
 
 
-## How the pice engine work
+## How the price engine work
 The function will be called with the arguments computed from the inputs of the customers
 ```
             TCT_TRANSPORTATION_FEE:      Base Price for a transportation cost in TTC (tax included)
@@ -93,7 +93,7 @@ The function will be called with the arguments computed from the inputs of the c
             TCT_TRANSPORTATION_DURATION: Transportation time computed in (seconds)
 ```
 
-## Use the cost computed by toncarton
+## Use the transportation and handling costs computed by toncarton
 Toncarton will compute the cost based on the addresses/elevator/floor and the items and expose this result on:
 `TCT_TRANSPORTATION_FEE`, `TCT_HANDLING_FEE` and `TCT_PERSONS`
 The price are in euro based on Paris, france.
