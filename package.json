@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha test",
     "format": "babel ./src/*.js -d temp",
-    "build": "bash ./bin/build.sh"
+    "build": "bash ./bin/build.sh",
+    "stats": "PATH=$(npm bin):$PATH sloc -d -f cli-table --keys source src/"
   },
   "author": "chadda chakib",
   "license": "MIT",
@@ -15,5 +16,8 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "mocha": "^7.1.1"
+  },
+  "dependencies": {
+    "sloc": "^0.2.1"
   }
 }
