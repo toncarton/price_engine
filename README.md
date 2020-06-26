@@ -87,7 +87,7 @@ The function will be called with the arguments computed from the inputs of the c
             TCT_PERSONS:                 Number of handlers needed to move all the items
             TCT_ADDRESSES:               Array of the addresses provided on the order form
             TCT_ITEMS:                   Array of items provided on the order form
-            TCT_DISTANCE:                Total distance A/R for the transportation
+            TCT_DISTANCE:                Total distance for the transportation
             TCT_CAPACITY:                Total colume occupied by the items
             TCT_HANDLING_DURATION:       Handling time computed in (seconds)
             TCT_TRANSPORTATION_DURATION: Transportation time computed in (seconds)
