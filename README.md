@@ -1,6 +1,6 @@
 # Price engine for toncarton
 
-This repository will help you to setup and customize a personal price engine for your toncarton account.
+This repository will help you to set up and customize a personal price engine for your toncarton account.
 
 ## Introduction
 The price engine is a simple `JavaScript function`.
@@ -88,7 +88,7 @@ The function will be called with the arguments computed from the inputs of the c
             TCT_ADDRESSES:               Array of the addresses provided on the order form
             TCT_ITEMS:                   Array of items provided on the order form
             TCT_DISTANCE:                Total distance for the transportation
-            TCT_CAPACITY:                Total colume occupied by the items
+            TCT_CAPACITY:                Total volume occupied by the items
             TCT_HANDLING_DURATION:       Handling time computed in (seconds)
             TCT_TRANSPORTATION_DURATION: Transportation time computed in (seconds)
 ```
@@ -96,7 +96,7 @@ The function will be called with the arguments computed from the inputs of the c
 ## Use the transportation and handling costs computed by toncarton
 Toncarton will compute the cost based on the addresses/elevator/floor and the items and expose this result on:
 `TCT_TRANSPORTATION_FEE`, `TCT_HANDLING_FEE` and `TCT_PERSONS`
-The price are in euro based on Paris, france.
+The price is in euro-based in Paris, France.
 
 Your price Engine can return this computed cost simply by returning them
 ```javascript
@@ -107,7 +107,7 @@ return {
 };
 ```
 
-You can also customize this prices like this example, when the cost are `20%` greater than the base price of toncarton.
+You can also customize these prices like this example when the cost is `20%` greater than the base price of toncarton.
 
 ```javascript
 return {
@@ -146,7 +146,7 @@ TCT_ADDRESSES: Array of
 
 ### Item (TCT_ITMES)
 
-Items are the object chosen by the customer like (box, table ..ect)
+Items are the object chosen by the customer like (box, table ..etc)
 
 ```
 TCT_ITMES: array of:
