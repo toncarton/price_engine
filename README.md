@@ -111,7 +111,7 @@ You can also customize these prices like this example when the cost is `20%` gre
 
 ```javascript
 return {
-  transportation: TCT_TRANSPORTATION_FEE 1.2, // prix TTC
+  transportation: TCT_TRANSPORTATION_FEE * 1.2, // prix TTC
   handling: TCT_HANDLING_FEE * 1.2, // prix TTC
   persons: TCT_PERSONS
 };
