@@ -17,7 +17,7 @@ The function should return an object containing:
 return {
   transportation: 10,
   handling: 10,
-  persons: 1
+  persons: 1,
 }
 ```
 
@@ -87,8 +87,8 @@ The function will be called with the arguments computed from the inputs of the c
             TCT_PERSONS:                 Number of handlers needed to move all the items
             TCT_ADDRESSES:               Array of the addresses provided on the order form
             TCT_ITEMS:                   Array of items provided on the order form
-            TCT_DISTANCE:                Total distance for the transportation
-            TCT_CAPACITY:                Total volume occupied by the items
+            TCT_DISTANCE:                Total distance  for the transportation in (metre)
+            TCT_CAPACITY:                Total volume occupied by the items in (cubic metre) 
             TCT_HANDLING_DURATION:       Handling time computed in (seconds)
             TCT_TRANSPORTATION_DURATION: Transportation time computed in (seconds)
 ```
@@ -117,6 +117,10 @@ return {
 };
 ```
 
+## Async operations
+You can use await and async to do async call,
+You should use only browser supported function like `fetch` to do async http calls
+
 ## Object interfaces
 
 ### Address (TCT_ADDRESSES)
@@ -127,8 +131,8 @@ When your customer choose addresses on the order form
 TCT_ADDRESSES: Array of
 {
     geocodeResolved: true
-    lat: 48.8556174
-    lng: 2.3600226
+    lat: 48.8556174             // latitude
+    lng: 2.3600226              // longitude
     locality: "Paris"
     country: "FR"
     postalCode: "75004"
@@ -151,15 +155,17 @@ Items are the object chosen by the customer like (box, table ..etc)
 ```
 TCT_ITMES: array of:
 {
-    minimal_truck_capacity: 0           // The minimal size of the truck to load this item
+    minimal_truck_capacity: 0           // The minimal size of the truck to load this item in cubic metre
     elevator: true                      // The presence of an elevator
     customPrice: undefined
     id: 8
     name: "Carton grand"
     category: "stuff"
-    volume: 0.4                         // volume occupied in m3
+    volume: 0.4                         // volume occupied in cubic metre (m3)
     time_factor: 0.05                   // ratio form 1 hour to handle this object ( grether => more complicated to handle)
     persons_needed: 1                   // number of handlers needed to lift and move the item
-    quantity: 1
+    quantity: 1                         // the quantity present of this item
 }
 ```
+
+
