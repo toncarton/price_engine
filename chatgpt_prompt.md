@@ -140,8 +140,8 @@ TCT_ITMES: array of:
 {
     minimal_truck_capacity: 0           // The minimal size of the truck to load this item in cubic metre
     elevator: true                      // The presence of an elevator
-    customPrice: undefined
     id: 8
+    weight: 12                          // The weight is in Kg
     name: "Carton grand"
     category: "stuff"
     volume: 0.4                         // volume occupied in cubic metre (m3)
