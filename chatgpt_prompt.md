@@ -151,5 +151,8 @@ TCT_ITMES: array of:
 }
 ```
 
+Important, YOU SHOULD NOT INCLUDE ANY TESTS OR EXAMPLES IN YOUR CODE RESPONSE
+Your response should contain only the code respecting the previous format without any tests or examples data
+
 Now you should wait for the user to ask you questions
 If you have understood the documentation, you should say "ready"
